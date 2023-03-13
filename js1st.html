@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width:100%;
+        padding-top: 20px;
+    }
+    .card{
+        width:23%;
+        height:60vh;
+        float:left;
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .card.highlighted{
+        width:23%;
+        height:60vh;
+        float:left;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .card img{
+        width:100%;
+        height: 40vh;
+    }
+    #all{
+        margin-left:300px;
+    }
+    .btn{
+        margin-left: 20px;
+    }
+    .ms-n5 {
+    margin-left: -40px;
+}
+.input-group{
+    width: 30%;
+    float: right;
+}
+.row{
+    margin-top: 80px;
+}
+.card-text{
+    color:brown;
+    font-weight: 500;
+    font-size: 20px;
+   
+}
+.btn-primary{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+#cart-container{
+    margin-top: 100px;
+}
+.btn-container{
+    padding-top:30px;
+}
+.row{
+    width:100%;
+}
+
+</style>
+<body>
+    <div class="input-group">
+        <input class="form-control border-end-0 border rounded-pill" type="search" placeholder="search your favourite product" id="example-search-input">
+        <span class="input-group-append">
+            <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+    <div class="row">
+        <div class="btn-container">
+            <a href="#" class="btn btn-outline-secondary" data-filter="all" id="all">All</a>
+            <a href="#" class="btn btn-outline-secondary" data-filter="shirts">Shirts</a>
+            <a href="#" class="btn btn-outline-secondary" data-filter="tshirts">Tshirts</a>
+            <a href="#" class="btn btn-outline-secondary" data-filter="pants">Pants</a>
+            <a href="#" class="btn btn-outline-secondary" data-filter="shoes">shoes</a>
+            <a href="#" class="btn btn-outline-secondary" data-filter="furnitures">Furniture</a>
+            <a href="#" class="btn btn-outline-secondary" data-filter="electronics">Electronics</a>
+
+
+
+
+
+
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="card itemtype shirts" data-item="shirts">
+            <div class="card-img-top">
+
+            <img src="https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-young-man-model-dressed-red-checkered-shirt-fashion-man-posing_158538-4911.jpg?size=626&ext=jpg&ga=GA1.1.237522429.1674214230&semt=sph">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Red Checked Shirt</h5>
+                <p class="card-text">400</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+
+        <div class="card itemtype shoes" data-item="shoes">
+            <div class="card-img-top">
+
+            <img src="https://img.freepik.com/free-photo/pair-trainers_144627-3799.jpg?w=740&t=st=1678451414~exp=1678452014~hmac=f6afb96140e07c78896c40574f572c3470bf3a9a42b98146f68faf69ccc544a1">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Raco Blue shoes</h5>
+                <p class="card-text">600</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+        <div class="card itemtype electronics" data-item="electronics">
+            <div class="card-img-top">
+
+            <img src="https://img.freepik.com/free-vector/refrigerator-closed-opened-door-with-lots-food_1308-97980.jpg?size=626&ext=jpg&ga=GA1.2.237522429.1674214230&semt=sph">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Double door refrigerator</h5>
+                <p class="card-text">40000</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+        <div class="card itemtype pants" data-item="pants">
+            <div class="card-img-top">
+
+            <img src="https://img.freepik.com/free-photo/portrait-handsome-fashion-stylish-hipster-businessman-model-dressed-elegant-brown-suit-near-dark-wall_158538-11163.jpg?size=626&ext=jpg&ga=GA1.1.237522429.1674214230&semt=sph">
+</div>
+            <div class="card-body">
+                <h5 class="card-title">Gray trouser for men</h5>
+                <p class="card-text">500</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+
+        <div class="card itemtype electronics" data-item="electronics">
+            <div class="card-img-top">
+
+            <img src="https://img.freepik.com/premium-photo/modern-air-conditioning_96743-314.jpg?size=626&ext=jpg&uid=R95766362&ga=GA1.1.2142705728.1678363506&semt=sph">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Window/Normal Ac</h5>
+                <p class="card-text">50000</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+
+        <div class="card itemtype furnitures" data-item="furnitures">
+            <div class="card-img-top">
+
+            <img src="https://img.freepik.com/free-photo/gray-sofa-white-living-room-interior-with-copy-space-3d-rendering_43614-802.jpg?size=626&ext=jpg&uid=R95766362&ga=GA1.1.2142705728.1678363506&semt=sph">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Leather Sofa Set </h5>
+                <p class="card-text">60000</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+        <div class="card itemtype shoes" data-item="shoes">
+            <div class="card-img-top">
+
+            <img src="https://img.freepik.com/premium-photo/flying-trendy-sneakers-creative-colorful-background-stylish-fashionable-minimalism-concept-levita_77190-8701.jpg?size=626&ext=jpg&uid=R95766362&ga=GA1.2.2142705728.1678363506&semt=sph">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Nike Shoes For Men</h5>
+                <p class="card-text">3700</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+        <div class="card itemtype tshirts" data-item="tshirts">
+            <div class="card-img-top">
+              <img src="https://img.freepik.com/premium-photo/stylish-casual-indian-man-wear-blue-tshirt-posing-against-grey-wall_151355-12157.jpg?size=626&ext=jpg&uid=R95766362&ga=GA1.1.2142705728.1678363506&semt=sph">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">Blue Tshirt For Men</h5>
+                <p class="card-text">1200</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+ 
+
+        <div class="card itemtype furnitures" data-item="furnitures">
+            <div class="card-img-top">
+
+            <img src="https://img.freepik.com/free-photo/3d-rendering-modern-dining-room-living-room-with-luxury-decor_105762-2000.jpg?size=626&ext=jpg&uid=R95766362&ga=GA1.1.2142705728.1678363506&semt=sph">
+           </div>
+            <div class="card-body">
+                <h5 class="card-title">Best Interior</h5>
+                <p class="card-text">100000</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+
+        <div class="card itemtype shoes" data-item="shoes">
+            <div class="card-img-top">
+
+            <img src="https://img.freepik.com/free-photo/new-pair-white-sneakers-isolated-white_93675-135206.jpg?size=626&ext=jpg&uid=R95766362&ga=GA1.1.2142705728.1678363506&semt=sph">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">White Sneakers For Men</h5> </h5>
+                <p class="card-text">2700</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+        <div class="card itemtype furnitures" data-item="furnitures">
+            <div class="card-img-top">
+
+            <img src="https://img.freepik.com/free-photo/dining-room-arrangement_23-2148893942.jpg?size=626&ext=jpg&uid=R95766362&ga=GA1.1.2142705728.1678363506&semt=ais">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Dining table 6 seater</h5>
+                <p class="card-text">37000</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+        <div class="card itemtype pants" data-item="pants">
+            <div class="card-img-top">
+            <img src="https://img.freepik.com/free-photo/bunch-jeans-wooden-background-fashionable-clothes_169016-1944.jpg?size=626&ext=jpg&uid=R95766362&ga=GA1.1.2142705728.1678363506&semt=ais" class="images">
+        </div>
+            <div class="card-body">
+                <h5 class="card-title">Blue Jeans For Men</h5>
+                <p class="card-text">4200</p>
+                <a href="#!" class="btn btn-primary">Add to cart</a>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        //search items based on data 
+
+       let itemstored = document.querySelectorAll('.itemtype');
+       let buttons = document.querySelectorAll('.btn-outline-secondary');
+
+       buttons.forEach((button)=>{
+         button.addEventListener('click',(e)=>{
+            e.preventDefault();
+
+            itemstored.forEach(item=>item.classList.remove('highlighted'));
+
+            const filteritem = e.target.dataset.filter;
+           
+
+            itemstored.forEach((item)=>{
+               
+              if(filteritem === 'all'){
+                    item.style.display="block";
+                    
+                    console.log(item);
+                }
+                else if(item.classList.contains(filteritem)){
+                    item.style.display ="block";
+                    item.classList.add('highlighted');
+
+                }
+                else{
+                    item.style.display="none";
+                }
+
+
+            });
+         });
+    });
+
+    //search data using search field
+
+    let searchinput = document.getElementById('example-search-input');
+
+    searchinput.addEventListener('keyup',function(){
+
+        let searchitem = searchinput.value.trim().toLowerCase();
+
+        itemstored.forEach((item)=>{
+            let itemcontent = item.textContent.trim().toLowerCase();
+
+            if(itemcontent.includes(searchitem)){
+                item.style.display='block';
+            }
+            else{
+                item.style.display="none";
+            }
+        })
+
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+</body>
+</html>
